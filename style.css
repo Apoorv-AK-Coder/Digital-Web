@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #ff497c;
+    --first-color: #141414;
+    --second-color: #fff;
+    --third-color: #A0CE4E;
+    --fourth-color: #00BEA3;
+    --fifth-color: #F1894C;
+    --sixth-color: #1F2732;
+
+    --primary-font: Poppins;
+    --second-font: Montserrat;
+}
+
+.container {}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: var(--second-color); */
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.row {
+    width: 1280px;
+    /* background-color: red; */
+    margin: auto;
+    padding: 6% 0;
+}
+
+.head {
+    width:1536px;
+    background-color: green;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.d-flex {
+    display: flex;
+    /* justify-content: center; */
+}
+
+.feet { background-color: var(--primary-color); }
+.foot{
+    width:1536px;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+p {
+    font-family: var(--second-font);
+    line-height: 2;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact {
+    background-color: #f4f4f5;
+}
+
+
+.foot-logo img {
+    width: 35px;
+    background-color: var(--sixth-color);
+    padding: 17px;
+    border-radius: 100%;
+}
+
+.foot-logo {
+    margin: auto !important;
+    text-align: center;
+}
+
+
+.back {
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/bg-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    clip-path: polygon(0 15%, 50% 0, 100% 15%, 100% 85%, 50% 100%, 0 85%);
+}
+
+.column {
+    flex: 1;
+}
+
+.column i {
+    font-size: 75px;
+    margin: auto;
+}
+
+.foot-icon {
+        text-align: center;
+        background-color: var(--second-color);
+    border-radius: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
+    
+}
+
+.clip {
+    clip-path: polygon(0 0, 50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.vl {
+    border-left: 6px dotted var(--fourth-color);
+    height: 75px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
