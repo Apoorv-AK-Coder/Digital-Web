@@ -15,9 +15,7 @@
 /* global css starts  */
 
 
-.container {
-
-}
+.container {}
 
 body {
     margin: 0;
@@ -32,7 +30,7 @@ body {
 
 /* global css ends */
 .head {
-    width:1536px;
+    width: 1536px;
     background-color: green;
     margin: auto;
     padding: 15px 0;
@@ -99,7 +97,7 @@ h3 {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    box-shadow: 0px 0px 2px 2px  rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -130,26 +128,31 @@ h3 {
 
 
 /* footer start here  */
-footer{
+footer {
     margin: 0px;
     z-index: 9;
     position: relative;
 }
-footer .background{
+
+footer .background {
     padding: 75px 0 !important;
 
 }
 
-footer .logo{
+footer .logo {
     position: absolute;
     width: 100%;
     top: -18%;
 }
+
 /* footer ends here  */
 
-.feet { background-color: var(--primary-color); }
-.foot{
-    width:1536px;
+.feet {
+    background-color: var(--primary-color);
+}
+
+.foot {
+    width: 1536px;
     margin: auto;
     padding: 15px 0;
     text-align: center;
@@ -158,11 +161,11 @@ footer .logo{
 .foot-icon {
     text-align: center;
     background-color: var(--second-color);
-border-radius: 100%;
-padding: 20px;
-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-width: 100px;
-height: 100px;
+    border-radius: 100%;
+    padding: 20px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+    width: 100px;
+    height: 100px;
 
 }
 
@@ -184,9 +187,15 @@ height: 100px;
 }
 
 
-.foot-logo i { font-size: 20px; margin: 0 5px;}
+.foot-logo i {
+    font-size: 20px;
+    margin: 0 5px;
+}
 
-a {color: var(--second-color); text-decoration: none;}
+a {
+    color: var(--second-color);
+    text-decoration: none;
+}
 
 
 .button1 {
@@ -201,7 +210,10 @@ a {color: var(--second-color); text-decoration: none;}
     background-color: var(--second-color);
 }
 
-.button1:hover {background-color: var(--primary-color); color: var(--second-color);}
+.button1:hover {
+    background-color: var(--primary-color);
+    color: var(--second-color);
+}
 
 .button2 {
     font-family: var(--second-font);
@@ -216,4 +228,54 @@ a {color: var(--second-color); text-decoration: none;}
     background-color: var(--primary-color);
 }
 
-.button2:hover {background-color: var(--second-color); color: var(--primary-color);}
+.button2:hover {
+    background-color: var(--second-color);
+    color: var(--primary-color);
+}
+
+
+/* Slider start header */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+
+    transition: transform 0.5s ease-in-out;
+    /* overflow: hidden; */
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Slider ends header */
+
+* {
+    gap: 15px;
+}
+
+.section {
+    background-color: var(--second-color);
+    padding: 20px;
+}
+
+.section img {
+    width: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    padding: 5px;
+}

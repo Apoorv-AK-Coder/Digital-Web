@@ -36,37 +36,55 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" style="background-color: #f4f4f5;">
         <div class="row">
-            <div class="column" style="text-align: center;">
-                as
-            </div>
-            <div class="column" style="text-align: center;">
-                as
-            </div>
-            <div class="column" style="text-align: center;">
-                as
-            </div>
-            <div class="column" style="text-align: center;">
-                as
-            </div>
-
-            <div class="owl-carousel owl-theme">
-                <div class="item"><h4>1</h4></div>
-                <div class="item"><h4>2</h4></div>
-                <div class="item"><h4>3</h4></div>
-                <div class="item"><h4>4</h4></div>
-                <div class="item"><h4>5</h4></div>
-                <div class="item"><h4>6</h4></div>
-                <div class="item"><h4>7</h4></div>
-                <div class="item"><h4>8</h4></div>
-                <div class="item"><h4>9</h4></div>
-                <div class="item"><h4>10</h4></div>
-                <div class="item"><h4>11</h4></div>
-                <div class="item"><h4>12</h4></div>
+            <div class="column slider-container" style="text-align: center;">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                        <div class="slide section">
+                            <p>06-Jan-24</p>
+                            <h3>Post With Carousel</h3>
+                            <img src="./images/placeholder.png" alt="Slide 1">
+                            <p>Apoorv Agarwal</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+
 
     <div class="container blue-bg clip">
         <div class="row d-flex">
@@ -163,34 +181,30 @@
             </div>
         </div>
     </div>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:5
-        }
-    }
-})
-
-    </script>
 </body>
 
 <script src="https://kit.fontawesome.com/513bc71f1a.js" crossorigin="anonymous"></script>
+
+<script>
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slide');
+    const slideWidth = slides[0].clientWidth;
+    const slidesPerPage = 3; // Display 3 slides at a time
+    let slideIndex;
+
+    function nextSlide() {
+        if (slideIndex < slides.length - slidesPerPage) {
+            slideIndex++;
+        } else {
+            slideIndex = 0;
+        }
+        slider.style.transform = `translateX(-${slideIndex * slideWidth * slidesPerPage}px)`;
+    }
+
+    setInterval(nextSlide, 2000); // Change slide every 3 seconds (3000 milliseconds)
+
+
+</script>
 
 
 

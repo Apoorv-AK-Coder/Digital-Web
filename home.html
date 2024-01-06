@@ -1,53 +1,49 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        
+    </style>
 </head>
 <body>
-    <div class="owl-carousel owl-theme">
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-        <div class="item"><img src="./images/bg-01.jpg"></div>
-    </div>
+    <div class="slider">
+        <div class="slides">
+          <div><img src="./images/bg-01.jpg" alt="Slide 1"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 2"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 3"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 1"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 2"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 3"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 1"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 2"></div>
+          <div><img src="./images/bg-01.jpg" alt="Slide 3"></div>
+        </div>
+      </div>
 
+<script>
+    const slides = document.querySelector('.slides');
+const slideWidth = document.querySelector('.slides img').clientWidth;
+const slidesCount = slides.children.length;
+const slidesPerPage = 3; // Display 3 slides at a time
+let slideIndex = 0;
 
+function nextSlide() {
+  if (slideIndex < slidesCount - slidesPerPage) {
+    slideIndex++;
+  } else {
+    slideIndex = 0;
+  }
+  slides.style.transform = `translateX(-${slideIndex * slideWidth * slidesPerPage}px)`;
+}
+
+setInterval(nextSlide, 3000); // Change slide every 3 seconds (3000 milliseconds)
+
+</script>
 
     
 </body>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-compat/3.0.0-alpha1/jquery.min.js" integrity="sha512-4GsgvzFFry8SXj8c/VcCjjEZ+du9RZp/627AEQRVLatx6d60AUnUYXg0lGn538p44cgRs5E2GXq+8IOetJ+6ow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
-
-    <script>
-       $('.owl-carousel').owlCarousel({
-    loop:false,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-    </script>
-</html>
+</html> -->
