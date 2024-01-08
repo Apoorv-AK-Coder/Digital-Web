@@ -336,3 +336,28 @@ para {
     margin: 0;
     padding: 0;
 }
+
+.work {
+    width: 75px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+
+/*background hero slider*/
+
+
+.heroslider {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .heroslides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  /* .heroslides img {
+    width: 100%;
+  } */

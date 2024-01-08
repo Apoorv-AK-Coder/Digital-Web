@@ -42,3 +42,19 @@ function newSlide() {
 }
 
 setInterval(newSlide, 2000); // Change slide every 3 seconds (3000 milliseconds)
+
+
+const heroslides = document.querySelector('.heroslides');
+const heroslideWidth = document.querySelector('.heroslides img').clientWidth;
+let heroslideIndex = 0;
+
+function heroSlide() {
+  if (heroslideIndex === heroslides.children.length - 1) {
+    heroslideIndex = 0;
+  } else {
+    heroslideIndex++;
+  }
+  heroslides.style.transform = `translateX(-${heroslideIndex * heroslideWidth}px)`;
+}
+
+setInterval(heroSlide, 3000); // Change slide every 3 seconds (3000 milliseconds)
