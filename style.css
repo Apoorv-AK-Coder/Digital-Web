@@ -6,17 +6,12 @@
     --fourth-color: #00BEA3;
     --fifth-color: #F1894C;
     --sixth-color: #1F2732;
-
+    /*fonts*/
     --primary-font: Poppins;
     --second-font: Montserrat;
 }
 
-
 /* global css starts  */
-
-
-/* .container {} */
-
 body {
     margin: 0;
     padding: 0;
@@ -39,8 +34,6 @@ body {
 .d-flex {
     display: flex;
 }
-
-
 
 p {
     font-family: var(--second-font);
@@ -74,10 +67,6 @@ h3 {
     background-color: #f4f4f5;
 }
 
-
-
-
-
 .white-bg {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/bg-02.jpg);
     background-position: center;
@@ -104,8 +93,6 @@ h3 {
     text-align: center;
 }
 
-
-
 .clip {
     clip-path: polygon(0 0, 50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
@@ -129,7 +116,6 @@ h3 {
 .clip3 {
     clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
-
 
 /* footer start here  */
 footer {
@@ -156,7 +142,7 @@ footer .logo {
 }
 
 .foot {
-    width: 1536px;
+    width: 1100px;
     margin: auto;
     padding: 15px 0;
     text-align: center;
@@ -170,16 +156,13 @@ footer .logo {
     box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
     width: 100px;
     height: 100px;
-
 }
-
 
 .foot-logo {
     margin: auto !important;
     text-align: center;
     margin-top: -45px !important;
     z-index: 999;
-    /* position: ; */
 }
 
 .foot-logo img {
@@ -187,9 +170,7 @@ footer .logo {
     background-color: var(--sixth-color);
     padding: 17px;
     border-radius: 100%;
-    /* z-index: 100 !important; */
 }
-
 
 .foot-logo i {
     font-size: 20px;
@@ -204,7 +185,6 @@ a {
 
 .button1 {
     font-family: var(--second-font);
-    /* line-height: 2; */
     font-size: 18px;
     font-weight: 700;
     margin: 3% 0;
@@ -221,7 +201,6 @@ a {
 
 .button2 {
     font-family: var(--second-font);
-    /* line-height: 2; */
     font-size: 18px;
     font-weight: 700;
     margin: 3% 0;
@@ -237,7 +216,6 @@ a {
     color: var(--primary-color);
 }
 
-
 /* Slider start header */
 
 .slider-container {
@@ -246,9 +224,7 @@ a {
 }
 
 .slider {
-
     transition: transform 0.5s ease-in-out;
-    /* overflow: hidden; */
 }
 
 .slides {
@@ -260,11 +236,19 @@ a {
     max-width: 30%;
 }
 
-.slides img {
-    width: 100%;
-    height: auto;
+.owlslider {
+    transition: transform 0.5s ease-in-out;
+    /* overflow: hidden; */
 }
 
+.owlslides {
+    display: flex;
+}
+
+.owlslide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 
 /* Slider ends header */
 
@@ -291,7 +275,6 @@ a {
 }
 
 .place {
-    /* background-color: var(--first-color); */
     width: 200px;
     padding: 5px;
     border-radius: 100%;
@@ -307,6 +290,49 @@ a {
     background-image: url(./images/bg-03.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: scroll; */
     background-size: cover;
+    padding: 10% 0;
+}
+
+font {
+    cursor: pointer;
+}
+
+.clip4 {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.flow {
+    margin-top: -90px;
+    position: relative;
+}
+
+.flow1 {
+    margin-top: -100px;
+    position: relative;
+}
+
+.products {
+    width: 19.7%;
+}
+
+.clip5 {
+    clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+}
+
+.usp {
+    margin: auto;
+}
+
+.usps {
+    padding: 1% 0;
+}
+
+para {
+    color:white;
+    font-family: var(--primary-font);
+    line-height: 1.2;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
 }
