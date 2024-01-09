@@ -57,4 +57,4 @@ function heroSlide() {
   heroslides.style.transform = `translateX(-${heroslideIndex * heroslideWidth}px)`;
 }
 
-setInterval(heroSlide, 3000); // Change slide every 3 seconds (3000 milliseconds)
+setInterval(heroSlide, 2000); // Change slide every 3 seconds (3000 milliseconds)
