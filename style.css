@@ -1,3 +1,9 @@
+/* Global CSS Starts Here*/
+
+* {
+    gap: 5px;
+}
+
 :root {
     --primary-color: #ff497c;
     --first-color: #141414;
@@ -11,7 +17,6 @@
     --second-font: Montserrat;
 }
 
-/* global css starts  */
 body {
     margin: 0;
     padding: 0;
@@ -23,12 +28,8 @@ body {
     padding: 6% 0;
 }
 
-/* global css ends */
-.head {
-    width: 1536px;
-    background-color: green;
-    margin: auto;
-    padding: 15px 0;
+.column {
+    flex: 1;
 }
 
 .d-flex {
@@ -43,14 +44,9 @@ p {
     padding: 0;
 }
 
-h2 {
-    font-family: var(--primary-font);
-    line-height: 1.5;
-    font-size: 35px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: var(--first-color);
+a {
+    color: var(--second-color);
+    text-decoration: none;
 }
 
 h1 {
@@ -65,6 +61,16 @@ h1 {
     text-shadow: 2px 2px 2px #141414;
 }
 
+h2 {
+    font-family: var(--primary-font);
+    line-height: 1.5;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--first-color);
+}
+
 h3 {
     font-family: var(--primary-font);
     line-height: 1.5;
@@ -75,9 +81,23 @@ h3 {
     color: var(--first-color);
 }
 
-.contact {
-    background-color: #f4f4f5;
+para {
+    color: white;
+    font-family: var(--primary-font);
+    line-height: 1.2;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
 }
+
+.divider {
+    position: relative;
+    left: 50%;
+}
+
+/* Global CSS Ends Here*/
+
+/*Backgrounds Start Here*/
 
 .white-bg {
     background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./images/bg-02.jpg);
@@ -87,34 +107,28 @@ h3 {
     background-size: cover;
 }
 
-.column {
-    flex: 1;
-}
-
-.icon i {
-    font-size: 85px;
-    background-color: #f4f4f5;
-    padding: 20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.icon {
-    text-align: center;
-}
-
-.clip {
-    clip-path: polygon(0 0, 50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%);
-}
-
 .blue-bg {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/bg-01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-size: cover;
+}
+
+.bg {
+    background-image: url(./images/bg-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+/*Backgrounds Ends Here*/
+
+/*All Clips Start Here*/
+
+.clip {
+    clip-path: polygon(0 0, 50% 15%, 100% 0, 100% 85%, 50% 100%, 0 85%);
 }
 
 .clip1 {
@@ -129,71 +143,17 @@ h3 {
     clip-path: polygon(0 0, 50% 5%, 100% 0, 100% 95%, 50% 100%, 0 95%);
 }
 
-/* footer start here  */
-footer {
-    margin: 0px;
-    z-index: 9;
-    position: relative;
+.clip4 {
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
 }
 
-footer .background {
-    padding: 75px 0 !important;
-
+.clip5 {
+    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
 }
 
-footer .logo {
-    position: absolute;
-    width: 100%;
-    top: -18%;
-}
+/*All Clips End Here*/
 
-/* footer ends here  */
-
-.feet {
-    background-color: var(--primary-color);
-}
-
-.foot {
-    width: 1100px;
-    margin: auto;
-    padding: 15px 0;
-    text-align: center;
-}
-
-.foot-icon {
-    text-align: center;
-    background-color: var(--second-color);
-    border-radius: 100%;
-    padding: 20px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
-    width: 100px;
-    height: 100px;
-}
-
-.foot-logo {
-    margin: auto !important;
-    text-align: center;
-    margin-top: -45px !important;
-    z-index: 999;
-}
-
-.foot-logo img {
-    width: 35px;
-    background-color: var(--sixth-color);
-    padding: 17px;
-    border-radius: 100%;
-}
-
-.foot-logo i {
-    font-size: 20px;
-    margin: 0 5px;
-}
-
-a {
-    color: var(--second-color);
-    text-decoration: none;
-}
-
+/*Buttons Startrs Here*/
 
 .button1 {
     font-family: var(--second-font);
@@ -228,137 +188,17 @@ a {
     color: var(--primary-color);
 }
 
-/* Slider start header */
+/*Buttons Ends Here*/
 
-.slider-container {
-    width: 100%;
-    overflow: hidden;
-}
+/*Hero Strarts Here*/
 
-.slider {
-    transition: transform 0.5s ease-in-out;
-}
-
-.slides {
-    display: flex;
-}
-
-.slide {
-    flex: 0 0 30%;
-    max-width: 30%;
-}
-
-.owlslider {
-    transition: transform 0.5s ease-in-out;
-    /* overflow: hidden; */
-}
-
-.owlslides {
-    display: flex;
-}
-
-.owlslide {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-/* Slider ends header */
-
-* {
-    gap: 5px;
-}
-
-.section {
-    background-color: var(--second-color);
-    padding: 20px;
-}
-
-.section img {
-    width: 30px;
-    border: 1px solid var(--primary-color);
-    border-radius: 100%;
-    padding: 5px;
-}
-
-.over {
-    margin-top: -90px;
+.hero {
+    position: absolute;
     z-index: 1;
-    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-.place {
-    width: 200px;
-    padding: 5px;
-    border-radius: 100%;
-    border: 10px solid rgba(0, 0, 0, 0.5);
-}
-
-.book-cover {
-    width: 32.3%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-.bg {
-    background-image: url(./images/bg-03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 10% 0;
-}
-
-font {
-    cursor: pointer;
-}
-
-.clip4 {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-}
-
-.flow {
-    margin-top: -90px;
-    position: relative;
-}
-
-.flow1 {
-    margin-top: -100px;
-    position: relative;
-}
-
-.products {
-    width: 19.7%;
-}
-
-.clip5 {
-    clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 97%);
-}
-
-.usp {
-    margin: auto;
-}
-
-.usps {
-    padding: 1% 0;
-}
-
-para {
-    color: white;
-    font-family: var(--primary-font);
-    line-height: 1.2;
-    font-size: 150px;
-    margin: 0;
-    padding: 0;
-}
-
-.work {
-    width: 75px;
-    border: 5px solid rgba(0, 0, 0, 0.3);
-    border-radius: 100%;
-    padding: 5px;
-}
-
-
-/*background hero slider*/
-
 
 .heroslider {
     width: 100%;
@@ -380,15 +220,171 @@ para {
     /* opacity: 0.5; */
 }
 
-.hero {
-   position: absolute;
-   z-index: 1;
-   top: 50%;
-  left: 50%;
-   transform: translate(-50%, -50%);
+/*Hero Ends Here*/
+
+/* Slider start header */
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
 }
 
-.divider {
-    position: relative; left: 50%;
-    /* margin: 2% 0; */
+.slider {
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides {
+    display: flex;
+}
+
+.slide {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+.section {
+    background-color: var(--second-color);
+    padding: 20px;
+}
+
+.section img {
+    width: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.place {
+    width: 200px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 10px solid rgba(0, 0, 0, 0.5);
+}
+
+.owlslider {
+    transition: transform 0.5s ease-in-out;
+    /* overflow: hidden; */
+}
+
+.owlslides {
+    display: flex;
+}
+
+.owlslide {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Slider ends header */
+
+/*contact Section starts here*/
+
+.icon i {
+    font-size: 85px;
+    background-color: #f4f4f5;
+    padding: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    text-align: center;
+}
+
+/*contact Section ends here*/
+
+/* footer start here  */
+
+footer {
+    margin: 0px;
+    z-index: 9;
+    position: relative;
+}
+
+footer .background {
+    padding: 75px 0 !important;
+
+}
+
+footer .logo {
+    position: absolute;
+    width: 100%;
+    top: -18%;
+}
+
+.feet {
+    background-color: var(--primary-color);
+}
+
+.foot {
+    width: 1100px;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.foot-logo {
+    margin: auto !important;
+    text-align: center;
+    margin-top: -45px !important;
+}
+
+.foot-logo img {
+    width: 35px;
+    background-color: var(--sixth-color);
+    padding: 17px;
+    border-radius: 100%;
+}
+
+.foot-logo i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+/* footer ends here  */
+
+.over {
+    margin-top: -90px;
+    z-index: 1;
+    position: relative;
+}
+
+.book-cover {
+    width: 32.3%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+font {
+    cursor: pointer;
+}
+
+.flow {
+    margin-top: -90px;
+    position: relative;
+}
+
+.flow1 {
+    margin-top: -100px;
+    position: relative;
+}
+
+.products {
+    width: 19.7%;
+}
+
+.usp {
+    margin: auto;
+}
+
+.usps {
+    padding: 1% 0;
+}
+
+.work {
+    width: 75px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 100%;
+    padding: 5px;
 }
