@@ -1,0 +1,12 @@
+@media only screen and (max-width: 7600px) {
+    .row {
+        width: 100% !important;
+        padding: 4% !important;
+    }
+
+    .d-flex {
+        flex-direction: column !important;
+    }
+
+    h1 { font-size: 75px !important; }
+}

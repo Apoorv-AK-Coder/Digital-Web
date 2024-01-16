@@ -1,7 +1,9 @@
 /* Global CSS Starts Here*/
 
 * {
-    gap: 5px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,11 +17,6 @@
     /*fonts*/
     --primary-font: Poppins;
     --second-font: Montserrat;
-}
-
-body {
-    margin: 0;
-    padding: 0;
 }
 
 .row {
